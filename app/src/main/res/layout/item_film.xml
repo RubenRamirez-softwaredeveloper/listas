@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/FilmYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anio"
+        app:layout_constraintLeft_toRightOf="@id/FilmPhoto"
+        app:layout_constraintTop_toBottomOf="@id/FilmDirector" />
+
+    <TextView
+        android:id="@+id/FilmDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Director"
+        app:layout_constraintLeft_toRightOf="@id/FilmPhoto"
+        app:layout_constraintTop_toBottomOf="@id/FilmName"/>
+
+    <ImageView
+        android:id="@+id/FilmPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FilmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        app:layout_constraintLeft_toRightOf="@id/FilmPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
